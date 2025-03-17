@@ -111,7 +111,7 @@ const Home = () => {
                     <input ref={msgRef} className="input w-full px-3 py-6 rounded-lg bg-transparent border border-gray-500 text-black dark:text-white" type="text" name="text" placeholder="What's on your mind?" />
 
                     <div className="flex send items-center gap-4 absolute right-7 top-8">
-                        <IoIosSend size={27} className="text-black dark:text-white cursor-pointer" />
+                        <IoIosSend onClick={handleSubmit} size={27} className="text-black dark:text-white cursor-pointer" />
                         <MdEmojiEmotions size={27} className="max-sm:hidden block text-black dark:text-white cursor-pointer"/>
                         <AiFillAudio size={27} className="max-sm:hidden block text-black dark:text-white cursor-pointer"/>
                         <HiDotsHorizontal size={27} className="max-sm:block hidden text-black dark:text-white cursor-pointer"/>
